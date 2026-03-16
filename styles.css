@@ -1,0 +1,161 @@
+/* Import custom font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+  --bg-color: #f4f7fb;
+  --text-color: #1f2937;
+  --card-color: #ffffff;
+  --accent-color: #2563eb;
+  --accent-hover: #1d4ed8;
+  --nav-color: #0f172a;
+  --footer-color: #e5e7eb;
+}
+
+body.dark-mode {
+  --bg-color: #0f172a;
+  --text-color: #f8fafc;
+  --card-color: #1e293b;
+  --accent-color: #60a5fa;
+  --accent-hover: #93c5fd;
+  --nav-color: #020617;
+  --footer-color: #1e293b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.7;
+}
+
+header {
+  background-color: var(--nav-color);
+  padding: 1rem 2rem;
+}
+
+.navbar {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.logo {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #cbd5e1;
+}
+
+#theme-toggle {
+  padding: 0.5rem 0.9rem;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--accent-color);
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+#theme-toggle:hover {
+  background-color: var(--accent-hover);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1.2rem;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--accent-color);
+}
+
+.content-card {
+  background-color: var(--card-color);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.content-card h2,
+.content-card h3 {
+  margin-bottom: 1rem;
+}
+
+.content-card p {
+  margin-bottom: 1rem;
+}
+
+.main-image {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: 0 auto 1.5rem auto;
+  border-radius: 12px;
+}
+
+.content-card ul {
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.contact-list li {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: var(--accent-color);
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--footer-color);
+  margin-top: 2rem;
+}
